@@ -1,0 +1,5 @@
+cmake
+libc6-dev
+libstdc++-10-dev
+qtbase5-dev
+qt5-qmake
