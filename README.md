@@ -1,6 +1,6 @@
 # configure-qtcreator for Debian cross toolchains
 
-This repository contains utilities to quickly setup a toolchain for Debian cross compiliation,
+This repository contains utilities to setup a toolchain for Debian cross compiliation,
 aswell as the automatic configuration of a QtCreator Kit that allows working with the
 newly installed toolchain.
 
@@ -13,15 +13,15 @@ Currently the supported target platforms are:
 Requirements for the host system are:
 * Up-to-date Bullseye installation
 * Root capabilites
-* Working QtCreator installation (atleast version 6.0)
+* A QtCreator installation
 
 Install the following dependencies on your hostsystem:
 
-    apt install -y debootstrap qemu binfmt-support qemu-user-static \
+    apt install -y debootstrap qemu binfmt-support qemu-user-static
 
 ## Building the sysroot and installing the cross toolchain
 
-To build a sysroot containing armhf headers, libraries and more:
+To build a sysroot containing armhf headers, libraries etc.:
 
     cd configure-qtcreator-debian-sysroot
     mkdir ~/sysroots
@@ -30,6 +30,8 @@ To build a sysroot containing armhf headers, libraries and more:
 Then install the debian cross toolchain on your host system:
 
     apt install -y g++-arm-linux-gnueabihf gdb-multiarch
+
+You are now able to crosscompile applications for the Debian armhf platforms.
 
 ## Adding the kit to your QtCreator installation
 
