@@ -1,5 +1,7 @@
 # configure-qtcreator for Debian cross toolchains
 
+**DISCLAMER: This repository is still work in progress**
+
 This repository contains utilities to setup a toolchain for Debian cross compiliation,
 aswell as the automatic configuration of a QtCreator Kit that allows working with the
 newly installed toolchain.
